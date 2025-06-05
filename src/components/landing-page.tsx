@@ -17,6 +17,15 @@ export default function LandingPage() {
           <FaCloud className="size-[50px] md:size-[100px]" />
         </a>
         <a
+          href="https://buscaraspirar21.pixieset.com/velvetgreengarden-1/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          className="text-white text-4xl md:text-5xl transition-transform duration-300 hover:scale-125 hover:text-sky-400 active:scale-95 animate-from-right"
+        >
+          <FaPhotoVideo className="size-[50px] md:size-[100px]" />
+        </a>
+        <a
           href="https://www.instagram.com/velvetgreengarden?igsh=MTBrMXllcTF4cmk3NA%3D%3D&utm_source=qr"
           target="_blank"
           rel="noopener noreferrer"
@@ -34,18 +43,10 @@ export default function LandingPage() {
         >
           <FaWhatsapp className="size-[50px] md:size-[100px]" />
         </a>
-        <a
-          href="https://buscaraspirar21.pixieset.com/velvetgreengarden-1/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-          className="text-white text-4xl md:text-5xl transition-transform duration-300 hover:scale-125 hover:text-sky-400 active:scale-95 animate-from-right"
-        >
-          <FaPhotoVideo className="size-[50px] md:size-[100px]" />
-        </a>
       </div>
       <div className="absolute bottom-10 px-3">
-        We have our google drive, IG page, Whatsapp chat and Gallery all above{" "}
+        Tap on the above icons to access our online gallery, Instagram and
+        WhatsApp respectively{" "}
         <div className="inline-block text-2xl animate-move-up">&uarr;</div>
       </div>
     </div>
