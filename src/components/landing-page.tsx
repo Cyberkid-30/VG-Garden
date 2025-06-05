@@ -1,4 +1,5 @@
-import { FaCloud, FaInstagram, FaWhatsapp, FaPhotoVideo } from "react-icons/fa";
+import { Icons } from "./icons/icons";
+import IconItem from "./icons/iconItem";
 
 export default function LandingPage() {
   return (
@@ -7,42 +8,15 @@ export default function LandingPage() {
         Welcome to Velvet Green Garden
       </h1>
       <div className="flex gap-5 flex-wrap justify-center">
-        <a
-          href="https://drive.google.com/drive/folders/1KeG1r1zyzvatr_l-TqNjfR6oBHUAlfLX"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Google Drive"
-          className="text-white text-4xl md:text-5xl transition-transform duration-300 hover:scale-125 hover:text-sky-400 active:scale-95 animate-from-left"
-        >
-          <FaCloud className="size-[50px] md:size-[100px]" />
-        </a>
-        <a
-          href="https://buscaraspirar21.pixieset.com/velvetgreengarden-1/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-          className="text-white text-4xl md:text-5xl transition-transform duration-300 hover:scale-125 hover:text-sky-400 active:scale-95 animate-from-bottom"
-        >
-          <FaPhotoVideo className="size-[50px] md:size-[100px]" />
-        </a>
-        <a
-          href="https://www.instagram.com/velvetgreengarden?igsh=MTBrMXllcTF4cmk3NA%3D%3D&utm_source=qr"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-          className="text-white text-4xl md:text-5xl transition-transform duration-300 hover:scale-125 hover:text-sky-400 active:scale-95 animate-from-bottom"
-        >
-          <FaInstagram className="size-[50px] md:size-[100px]" />
-        </a>
-        <a
-          href="https://wa.me/message/FIS7HOZMTRSEF1"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-          className="text-white text-4xl md:text-5xl transition-transform duration-300 hover:scale-125 hover:text-sky-400 active:scale-95 animate-from-right"
-        >
-          <FaWhatsapp className="size-[50px] md:size-[100px]" />
-        </a>
+        {Icons.map((icon) => (
+          <IconItem
+            key={icon.arial_label}
+            url={icon.url}
+            icon={icon.icon}
+            arial_label={icon.arial_label}
+            animation={icon.animation}
+          />
+        ))}
       </div>
       <div className="absolute bottom-10 px-3">
         Tap on the above icons to access our online gallery, Instagram and
