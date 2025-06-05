@@ -21,7 +21,7 @@ export default function LandingPage() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
-          className="text-white text-4xl md:text-5xl transition-transform duration-300 hover:scale-125 hover:text-sky-400 active:scale-95 animate-from-right"
+          className="text-white text-4xl md:text-5xl transition-transform duration-300 hover:scale-125 hover:text-sky-400 active:scale-95 animate-from-bottom"
         >
           <FaPhotoVideo className="size-[50px] md:size-[100px]" />
         </a>
@@ -39,7 +39,7 @@ export default function LandingPage() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
-          className="text-white text-4xl md:text-5xl transition-transform duration-300 hover:scale-125 hover:text-sky-400 active:scale-95 animate-from-bottom"
+          className="text-white text-4xl md:text-5xl transition-transform duration-300 hover:scale-125 hover:text-sky-400 active:scale-95 animate-from-right"
         >
           <FaWhatsapp className="size-[50px] md:size-[100px]" />
         </a>
