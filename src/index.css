@@ -3,19 +3,20 @@
 
 @theme {
   --animate-from-top: from-top 1s ease-in-out;
+  --animate-from-bottom: from-bottom 1s ease-in-out;
   --animate-from-right: from-right 1s ease-in-out;
   --animate-from-left: from-left 1s ease-in-out;
+  --animate-move-up: move-up 0.5s ease-in-out infinite;
   --font-sans: "Open Sans", sans-serif;
   --font-handlee: "Handlee", cursive;
 }
 
 @utility bg-car {
   background-image: linear-gradient(
-      135deg,
-      rgba(0, 31, 63, 0.95),
-      rgba(0, 51, 102, 0.85)
-    ),
-    url("/tour-2.jpg");
+    135deg,
+    rgba(0, 31, 63, 0.95),
+    rgba(0, 51, 102, 0.85)
+  );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,6 +25,17 @@
 @keyframes from-top {
   from {
     transform: translateY(-200px);
+    opacity: 0.15;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes from-bottom {
+  from {
+    transform: translateY(100%);
     opacity: 0.15;
   }
   to {
@@ -51,5 +63,14 @@
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes move-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30%);
   }
 }
