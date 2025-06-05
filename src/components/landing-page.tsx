@@ -18,12 +18,12 @@ export default function LandingPage() {
           />
         ))}
       </div>
-      <div className="absolute flex gap-1 bottom-10 px-3">
+      <div className="absolute flex flex-col gap-1 bottom-10 px-6">
+        <div className="text-2xl animate-move-up">&uarr;</div>
         <p>
           Tap on the above icons to access our online gallery, Instagram and
           WhatsApp respectively
         </p>
-        <div className="text-2xl animate-move-up">&uarr;</div>
       </div>
     </div>
   );
