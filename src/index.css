@@ -13,10 +13,11 @@
 
 @utility bg-car {
   background-image: linear-gradient(
-    135deg,
-    rgba(0, 31, 63, 0.95),
-    rgba(0, 51, 102, 0.85)
-  );
+      135deg,
+      rgba(0, 31, 63, 0.75),
+      rgba(0, 51, 102, 0.65)
+    ),
+    url("/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
